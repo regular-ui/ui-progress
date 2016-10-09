@@ -1,0 +1,45 @@
+@import './core.mcss';
+
+// Component:       `u-linearProgress`
+// ========================================================================
+
+.u-linearProgress {
+    .linearProgress_track {
+        $line-height: 20px;
+        background: $background-base;
+    }
+
+    .linearProgress_trail {
+        background: $brand-primary;
+        font-size: $font-size-sm;
+        color: white;
+        $transition: width .6s ease;
+    }
+}
+
+
+
+// Size Extends:
+// ========================================================================
+
+$u-linearProgress-extend_size(xs, 3px);
+$u-linearProgress-extend_size(sm, 8px);
+$u-linearProgress-extend_size(lg, 28px);
+$u-linearProgress-extend_size(xl, 40px);
+
+
+
+// Color Extends:
+// ========================================================================
+
+$u-linearProgress-extend_color(info, $brand-info);
+$u-linearProgress-extend_color(success, $brand-success);
+$u-linearProgress-extend_color(warning, $brand-warning);
+$u-linearProgress-extend_color(error, $brand-error);
+
+
+
+// Extends:
+// ========================================================================
+
+$u-linearProgress-striped(40px);

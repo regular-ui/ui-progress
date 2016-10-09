@@ -1,0 +1,57 @@
+// Component:       `u-linearProgress`
+// ========================================================================
+
+.u-linearProgress {
+    // $box-sizing
+    .linearProgress_track {
+        overflow: hidden;
+    }
+
+    .linearProgress_trail {
+        width: 0;
+        height: 100%;
+        float: left;
+        // text-align: center;
+    }
+}
+
+
+
+// Extends:
+// Description:     尺寸和颜色扩展函数
+// ========================================================================
+
+$u-linearProgress-extend_size = ($name, $height) {
+    .u-linearProgress-#{$name} .linearProgress_track {
+        $line-height: $height;
+        // @if($name == 'sm' || $name == 'xs') {text-indent: -2000px;}
+    }
+}
+
+$u-linearProgress-extend_color = ($name, $background) {
+    .u-linearProgress-#{$name} .linearProgress_trail {
+        background-color: $background;
+    }
+}
+
+
+
+// Extends:
+// ========================================================================
+
+$u-linearProgress-striped = ($background-size = 30px) {
+    .u-linearProgress-striped .linearProgress_trail {
+        background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+        background-size: $background-size $background-size;
+    }
+
+    .u-linearProgress-striped.z-act .linearProgress_trail {
+        $animation: u-linearProgress-striped 2s linear infinite;
+    }
+
+    $keyframes(u-linearProgress-striped, {
+        0% {background-position: 0 0;}
+        100% {background-position: $background-size 0;}
+    });
+}

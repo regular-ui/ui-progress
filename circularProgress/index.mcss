@@ -1,0 +1,44 @@
+@import './core.mcss';
+
+// Component:       `u-circularProgress`
+// ========================================================================
+
+.u-circularProgress {
+    $size: 100px;
+
+    > svg circle {
+        stroke-width: 6px;
+    }
+
+    .circularProgress_track {
+        stroke: #eee;
+    }
+
+    .circularProgress_trail {
+        stroke: $brand-primary;
+        $transition: stroke 0.6s ease, stroke-dasharray 0.6s ease;
+    }
+
+    .circularProgress_text {
+        text-align: center;
+        line-height: 100px;
+        font-size: 18px;
+        color: #666;
+    }
+}
+
+// Size Extends:
+// ========================================================================
+
+$u-circularProgress-extend_size(xs, 30px, 0);
+$u-circularProgress-extend_size(sm, 60px, 12px);
+$u-circularProgress-extend_size(lg, 160px, 22px);
+$u-circularProgress-extend_size(xl, 200px, 24px);
+
+// Color Extends:
+// ========================================================================
+
+$u-circularProgress-extend_color(info, $brand-info);
+$u-circularProgress-extend_color(success, $brand-success);
+$u-circularProgress-extend_color(warning, $brand-warning);
+$u-circularProgress-extend_color(error, $brand-error);

@@ -1,0 +1,50 @@
+// Component:       `u-circularProgress`
+// ========================================================================
+
+.u-circularProgress {
+    display: inline-block;
+    position: relative;
+
+    > svg {
+        $size: 100%;
+    }
+
+    > svg circle {
+        fill-opacity: 0;
+    }
+
+    .circularProgress_text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+// Size Extends:
+// ========================================================================
+
+$u-circularProgress-extend_size = ($name, $size_, $font-size) {
+    .u-circularProgress-#{$name} {
+        $size: $size_;
+        .circularProgress_text {
+            font-size: $font-size;
+            $line-height: $size_;
+        }
+    }
+}
+
+// Color Extends:
+// ========================================================================
+
+$u-circularProgress-extend_color = ($name, $color) {
+    .u-circularProgress-#{$name} {
+        .circularProgress_trail {
+            stroke: $color;
+        }
+
+        .circularProgress_text {
+            color: $color;
+        }
+    }
+}

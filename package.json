@@ -1,0 +1,19 @@
+{
+  "name": "rgui-ui-progress",
+  "description": "Regular UI - Progress, LinearProgress, CircularProgress",
+  "version": "0.2.0-alpha",
+  "author": "Rainfore <rainforest92@126.com>",
+  "main": "./index.js",
+  "repository": "regular-ui/ui-progress",
+  "homepage": "http://regular-ui.github.io",
+  "bugs": {"url": "http://github.com/regular-ui/ui-progress/issues"},
+  "license": "MIT",
+  "keywords": ["regular", "ui", "rgui", "progress", "linear", "circular"],
+  "tags": ["regular", "ui", "rgui", "progress", "linear", "circular"],
+  "dependencies": {
+    "rgui-ui-base": "^0.2.0-alpha.5"
+  },
+  "peerDependencies": {
+    "regularjs": "^0.4.3"
+  }
+}

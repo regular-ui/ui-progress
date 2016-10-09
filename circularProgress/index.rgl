@@ -1,0 +1,10 @@
+<div class="u-circularProgress u-circularProgress-{size} u-circularProgress-{state} {class}" z-act={active} r-hide={!visible}>
+    <svg viewBox="0 0 100 100">
+        <g transform="translate(50, 50) rotate(-90)">
+            <circle class="circularProgress_track" cx="0" cy="0" r={_radius} />
+            <circle class="circularProgress_trail" cx="0" cy="0" r={_radius} style="stroke-dasharray: {2*Math.PI*_radius*percent*0.01}px 1000px;" />
+        </g>
+    </svg>
+    <div class="circularProgress_text">{percent + '%'}</div>
+    {#inc this.$body}
+ </div>

@@ -1,0 +1,6 @@
+<div class="u-linearProgress u-linearProgress-{size} u-linearProgress-{state} {class}" z-act={active} r-class={{ 'u-linearProgress-striped': striped }} r-hide={!visible}>
+    <div class="linearProgress_track">
+        <div class="linearProgress_trail" style="width: {percent}%;"></div>
+    </div>
+    {#inc this.$body}
+</div>
