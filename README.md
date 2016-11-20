@@ -19,9 +19,7 @@ Regular UI - Progress
 [download-img]: https://img.shields.io/npm/dm/rgui-ui-progress.svg?style=flat-square
 [download-url]: https://npmjs.org/package/rgui-ui-progress
 
-## Progress（进度条）
-
-- 基础示例+进阶案例+API: https://regular-ui.github.io/ui-progress/progress/index.html
+## Progress（进度条基类）（备用）
 
 ## LinearProgress（线型进度条）
 
