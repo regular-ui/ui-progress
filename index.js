@@ -1,4 +1,4 @@
-import LinearProgress from './linearProgress';
-import CircularProgress from './circularProgress';
+import LinearProgress from './src/linearProgress';
+import CircularProgress from './src/circularProgress';
 
 export { LinearProgress, CircularProgress };

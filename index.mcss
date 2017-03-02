@@ -1,2 +1,2 @@
-@import './linearProgress/index.mcss';
-@import './circularProgress/index.mcss';
+@import './src/linearProgress/index.mcss';
+@import './src/circularProgress/index.mcss';

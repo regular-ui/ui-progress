@@ -3,8 +3,8 @@ import template from './index.rgl';
 
 /**
  * @class CircularProgress
- * @extend Component
- * @param {object}                  options.data                     =  绑定属性
+ * @extends Component
+ * @param {Object}                  options.data                     =  绑定属性
  * @param {number=0}                options.data.percent             => 百分比
  * @param {string}                  options.data.size                => 进度条的尺寸
  * @param {string}                  options.data.state               => 进度条的状态
